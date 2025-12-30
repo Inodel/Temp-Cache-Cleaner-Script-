@@ -1,31 +1,26 @@
 # Temp & Cache Cleaner
 
-A Windows batch script that automates the cleanup of temporary files and npm cache to free up disk space and maintain system performance.
+A simple Windows batch script that helps free up disk space by cleaning temporary files and clearing npm cache.
 
-## Features
+## What it does
 
-- Removes temporary files from the system temp directory
-- Calculates and displays the amount of space freed
-- Clears npm cache (when npm is available)
-- Provides step-by-step progress information
+This script will:
+- Clean your system's temporary files directory
+- Show you how much space was freed
+- Clear npm cache if you have Node.js installed
 
-## Usage
+## How to use
 
-Run the script as administrator for optimal results:
+Just run the batch file as administrator for best results:
 
-```batch
-temp_delete.bat
+```
+temp_script.bat
 ```
 
-## What It Does
-
-1. **Analyzes** the temp folder to determine initial size
-2. **Cleans** all files in the temp directory and removes subdirectories
-3. **Clears** npm cache (if npm is installed and accessible)
-4. **Reports** the amount of space freed during the process
+The script will walk you through the cleanup process step by step.
 
 ## Notes
 
-- Some files may be skipped if they are currently in use by running programs
-- Administrator privileges may be required for complete cleanup
-- The script is designed for Windows environments
+- Some files might not get deleted if they're currently in use
+- Running as administrator gives the script better access to delete files
+- Works on Windows systems
